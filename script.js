@@ -15,4 +15,5 @@ const getComputerChoice = () => {
     }
     return choice
  }
- console.log(getHumanChoice())
+ 
+ 
