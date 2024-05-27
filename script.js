@@ -8,3 +8,11 @@ const getComputerChoice = () => {
         return "scissors"
     }
 };
+ const getHumanChoice = () => {
+    let choice = prompt("Enter your choice (rock, paper or scissors):").toLowerCase();
+    while (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+        choice = prompt("Invalid choice, enter rock paper or scissors").toLowerCase();
+    }
+    return choice
+ }
+ console.log(getHumanChoice())
